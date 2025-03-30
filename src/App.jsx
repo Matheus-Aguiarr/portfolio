@@ -4,7 +4,7 @@ import Header from "./components/Header/Header.jsx";
 
 function App() {
   return (
-    <div className="bg-[#292C33] h-[100vh]">
+    <div className="bg-[var(--bg-color)] h-[100vh]">
       <Header />
       <Home />
     </div>

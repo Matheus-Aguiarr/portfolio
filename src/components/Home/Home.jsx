@@ -3,24 +3,28 @@ import { FiLinkedin } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
+// Proxima coisa a fazer: addDownloadCV;
+
 const Home = () => {
   return (
     <div className=" mt-[250px] flex flex-col justify-center gap-[5px]">
       <h1 className="text-center text-white font-extralight text-[60px] mb-[-20px]">
-        Hello, I'm <span className="text-[#00AAFF] font-medium">Matheus</span>
+        Hello, I'm{" "}
+        <span className="text-[var(--main-color)] font-medium">Matheus</span>
       </h1>
       <h2 className="text-[45px] text-white font-extralight text-center">
-        <span className="font-medium text-[#00AAFF]">Fullstack</span> Developer
+        <span className="font-medium text-[var(--main-color)]">Fullstack</span>{" "}
+        Developer
       </h2>
       <div className="links flex flex-row justify-center gap-[30px]">
         <a href="">
-          <FiLinkedin size={40} color="#00AAFF" />
+          <FiLinkedin size={40} color="var(--main-color)" />
         </a>
         <a href="">
-          <FaInstagram size={40} color="#00AAFF" />
+          <FaInstagram size={40} color="var(--main-color)" />
         </a>
         <a href="">
-          <FiGithub size={40} color="#00AAFF" />
+          <FiGithub size={40} color="var(--main-color)" />
         </a>
       </div>
     </div>

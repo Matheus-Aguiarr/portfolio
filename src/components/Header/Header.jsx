@@ -19,7 +19,7 @@ const Header = () => {
       </div>
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul className="nav-list">
-          <li className="nav-item">
+          <li className="nav-item hover:tracking-[.3px] duration-[.5s] hover:text-[var(--main-color)]">
             <a href="#home">Home</a>
           </li>
           <li className="nav-item">

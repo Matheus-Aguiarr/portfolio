@@ -27,6 +27,13 @@ const Home = () => {
           <FiGithub size={40} color="var(--main-color)" />
         </a>
       </div>
+
+      <a
+        href=""
+        className="shadow-lg shadow-[#00aaff52] bg-[var(--main-color)] w-[fit-content] m-auto text-[#fff] mt-4 p-2 rounded-xl px-8 hover:bg-[var(--bg-color)] duration-[.5s] hover:text-[var(--main-color)] hover:shadow-[#00aaff8e] hover:tracking-[0.3px]"
+      >
+        Download CV
+      </a>
     </div>
   );
 };

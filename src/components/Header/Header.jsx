@@ -22,16 +22,16 @@ const Header = () => {
           <li className="nav-item hover:tracking-[.3px] duration-[.5s] hover:text-[var(--main-color)]">
             <a href="#home">Home</a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item hover:tracking-[.3px] duration-[.5s] hover:text-[var(--main-color)]">
             <a href="#skills">Skills</a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item hover:tracking-[.3px] duration-[.5s] hover:text-[var(--main-color)]">
             <a href="#portfolio">Portfolio</a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item hover:tracking-[.3px] duration-[.5s] hover:text-[var(--main-color)]">
             <a href="#contact">Contact</a>
           </li>
-          <li className="nav-item">
+          <li className="nav-item hover:tracking-[.3px] duration-[.5s] hover:text-[var(--main-color)]">
             <a href="#about">About</a>
           </li>
         </ul>

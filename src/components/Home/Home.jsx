@@ -7,9 +7,12 @@ import { GiLongLeggedSpider } from "react-icons/gi";
 import { GiHangingSpider } from "react-icons/gi";
 // Proxima coisa a fazer: addDownloadCV;
 
-const Home = () => {
+const Home = ({ onClick }) => {
   return (
-    <div className="home mt-[250px] flex flex-col justify-center gap-[5px]">
+    <div
+      className="home mt-[250px] flex flex-col justify-center gap-[5px]"
+      onClick={onClick}
+    >
       <div className=" flex flex-row-reverse m-auto">
         <GiSpiderMask
           size={30}

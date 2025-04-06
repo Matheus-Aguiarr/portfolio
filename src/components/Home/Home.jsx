@@ -12,6 +12,7 @@ const Home = ({ onClick }) => {
     <div
       className="home mt-[250px] flex flex-col justify-center gap-[5px]"
       onClick={onClick}
+      id="home"
     >
       <div className=" flex flex-row-reverse m-auto">
         <GiSpiderMask

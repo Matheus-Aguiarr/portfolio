@@ -8,3 +8,7 @@
   z-index: 0;
   position: fixed;
 }
+
+html {
+  background-color: var(--bg-color);
+}

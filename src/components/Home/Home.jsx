@@ -30,13 +30,13 @@ const Home = ({ onClick }) => {
         Developer
       </h2>
       <div className="links flex flex-row justify-center gap-[50px]">
-        <a href="">
+        <a href="" className="hover:scale-[1.05] duration-[.5s] ">
           <FiLinkedin size={40} color="var(--main-color)" />
         </a>
-        <a href="">
+        <a href="" className="hover:scale-[1.05] duration-[.5s]">
           <FaInstagram size={40} color="var(--main-color)" />
         </a>
-        <a href="">
+        <a href="" className="hover:scale-[1.05] duration-[.5s]">
           <FiGithub size={40} color="var(--main-color)" />
         </a>
       </div>

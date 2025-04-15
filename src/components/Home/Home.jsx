@@ -43,7 +43,10 @@ const Home = ({ onClick }) => {
         >
           <FaInstagram size={40} color="var(--main-color)" />
         </a>
-        <a href="" className="hover:scale-[1.05] duration-[.5s]">
+        <a
+          href="https://github.com/Matheus-Aguiarr"
+          className="hover:scale-[1.05] duration-[.5s]"
+        >
           <FiGithub size={40} color="var(--main-color)" />
         </a>
       </div>

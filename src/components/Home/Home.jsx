@@ -31,10 +31,16 @@ const Home = ({ onClick }) => {
         Developer
       </h2>
       <div className="links flex flex-row justify-center gap-[50px]">
-        <a href="" className="hover:scale-[1.05] duration-[.5s] ">
+        <a
+          href="https://www.linkedin.com/in/matheus-aguiar-aguiar-de-almeida-695a17352/"
+          className="hover:scale-[1.05] duration-[.5s] "
+        >
           <FiLinkedin size={40} color="var(--main-color)" />
         </a>
-        <a href="" className="hover:scale-[1.05] duration-[.5s]">
+        <a
+          href="https://www.instagram.com/theussz01/"
+          className="hover:scale-[1.05] duration-[.5s]"
+        >
           <FaInstagram size={40} color="var(--main-color)" />
         </a>
         <a href="" className="hover:scale-[1.05] duration-[.5s]">

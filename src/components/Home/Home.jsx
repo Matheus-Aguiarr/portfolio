@@ -5,6 +5,7 @@ import { FiGithub } from "react-icons/fi";
 import { GiSpiderMask } from "react-icons/gi";
 import { GiLongLeggedSpider } from "react-icons/gi";
 import { GiHangingSpider } from "react-icons/gi";
+import Particles from "../../Animations/Particles.jsx";
 // Proxima coisa a fazer: addDownloadCV;
 
 const Home = ({ onClick }) => {
@@ -14,6 +15,17 @@ const Home = ({ onClick }) => {
       onClick={onClick}
       id="home"
     >
+      <Particles
+        particleColors={["#ffffff", "#ffffff"]}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={true}
+        alphaParticles={false}
+        disableRotation={false}
+        className={"particles-home"}
+      />
       <div className=" flex flex-row-reverse m-auto">
         <GiSpiderMask
           size={30}

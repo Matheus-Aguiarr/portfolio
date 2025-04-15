@@ -15,6 +15,14 @@ const Portfolio = () => {
           className="custom-class"
         />
       </p>
+      <p className="text-center text-[20px]">
+        <ShinyText
+          text="In 2024 I started doing freelances as a web developer. These are my already done projects:"
+          disabled={false}
+          speed={3}
+          className="custom-class"
+        />
+      </p>
     </div>
   );
 };

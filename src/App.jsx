@@ -4,6 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import Skills from "./components/Skills/Skills.jsx";
 import { useState } from "react";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
+import Particles from "./Animations/Particles.jsx";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +20,26 @@ function App() {
 
   return (
     <div className="bg-[var(--bg-color)]">
-      <Header
-        navMenu={`nav ${isMenuOpen ? "open" : ""}`}
-        burgerMenu={toggleMenu}
+      <Particles
+        particleColors={["#ffffff", "#ffffff"]}
+        particleCount={200}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={true}
+        alphaParticles={false}
+        disableRotation={false}
+        className={"particles-home"}
       />
-      <Home onClick={closeMenu} />
-      <Skills onClick={closeMenu} />
-      <Portfolio />
+      <div className="app-content">
+        <Header
+          navMenu={`nav ${isMenuOpen ? "open" : ""}`}
+          burgerMenu={toggleMenu}
+        />
+        <Home onClick={closeMenu} />
+        <Skills onClick={closeMenu} />
+        <Portfolio />
+      </div>
     </div>
   );
 }

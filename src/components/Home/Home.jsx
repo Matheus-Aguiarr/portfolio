@@ -11,7 +11,7 @@ import { GiHangingSpider } from "react-icons/gi";
 const Home = ({ onClick }) => {
   return (
     <div
-      className="home mt-[250px] flex flex-col justify-center gap-[5px]"
+      className="home mt-[250px] flex flex-col justify-center gap-[5px] mb-[500px]"
       onClick={onClick}
       id="home"
     >

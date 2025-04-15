@@ -34,9 +34,9 @@ const Skills = ({ onClick }) => {
   ];
 
   return (
-    <div>
+    <div id="skills">
       <h1
-        className="text-white mt-[500px] font-medium text-[32px] text-center"
+        className="text-white  font-medium text-[32px] text-center"
         onClick={onClick}
       >
         My <span className="text-[var(--main-color)]">Skills</span>

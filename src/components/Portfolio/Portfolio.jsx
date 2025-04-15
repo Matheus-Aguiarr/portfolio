@@ -3,7 +3,7 @@ import ShinyText from "../../Animations/ShinyText.jsx";
 
 const Portfolio = () => {
   return (
-    <div>
+    <div id="portfolio" className="mb-[50px] mt-[300px]">
       <h1 className="text-white text-[32px] text-center">
         My <span className="text-[var(--main-color)]">Portfolio</span>
       </h1>
@@ -15,7 +15,7 @@ const Portfolio = () => {
           className="custom-class"
         />
       </p>
-      <p className="text-center text-[20px]">
+      <p className="text-center ">
         <ShinyText
           text="In 2024 I started doing freelances as a web developer. These are my already done projects:"
           disabled={false}

@@ -23,6 +23,18 @@ const Portfolio = () => {
           className="custom-class"
         />
       </p>
+      <div className="portfolio-container">
+        <div className="portfolioBox bg-[var(--bg-color03)] w-[250px] flex flex-col">
+          <img src="" alt="" />
+          <h2>
+            Landing Page - <span>HTML, CSS, JS</span>
+          </h2>
+          <div>
+            <a href="">View on Github</a>
+            <a href="">View on Web</a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

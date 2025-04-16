@@ -7,7 +7,7 @@ const PortfolioBox = ({
   urlWeb,
 }) => {
   return (
-    <div className="portfolioBox bg-[var(--bg-color03)] w-[300px] flex flex-col p-4 rounded-[10px] gap-[10px] hover:scale-[1.05] duration-[.5s] cursor-pointer">
+    <div className="portfolioBox bg-[var(--bg-color03)] w-[300px] flex flex-col p-4 rounded-[10px] gap-[10px] hover:scale-[1.05] duration-[.5s] cursor-pointer border-[var(--main-color)] border-1 hover:inset-shadow-sm inset-shadow-black">
       <div className="w-[90%] m-auto">
         <img src={img} alt="" className="rounded-md" />
       </div>

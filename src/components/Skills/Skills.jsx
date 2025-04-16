@@ -34,11 +34,8 @@ const Skills = ({ onClick }) => {
   ];
 
   return (
-    <div id="skills">
-      <h1
-        className="text-white  font-medium text-[32px] text-center"
-        onClick={onClick}
-      >
+    <div id="skills" onClick={onClick}>
+      <h1 className="text-white  font-medium text-[32px] text-center">
         My <span className="text-[var(--main-color)]">Skills</span>
       </h1>
       <section className="skills-container flex flex-row justify-center gap-[27px] mt-[50px] mb-[50px]">

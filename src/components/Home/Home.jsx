@@ -34,18 +34,21 @@ const Home = ({ onClick }) => {
         <a
           href="https://www.linkedin.com/in/matheus-aguiar-aguiar-de-almeida-695a17352/"
           className="hover:scale-[1.05] duration-[.5s] "
+          target="_blank"
         >
           <FiLinkedin size={40} color="var(--main-color)" />
         </a>
         <a
           href="https://www.instagram.com/theussz01/"
           className="hover:scale-[1.05] duration-[.5s]"
+          target="_blank"
         >
           <FaInstagram size={40} color="var(--main-color)" />
         </a>
         <a
           href="https://github.com/Matheus-Aguiarr"
           className="hover:scale-[1.05] duration-[.5s]"
+          target="_blank"
         >
           <FiGithub size={40} color="var(--main-color)" />
         </a>

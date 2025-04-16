@@ -38,7 +38,7 @@ function App() {
         />
         <Home onClick={closeMenu} />
         <Skills onClick={closeMenu} />
-        <Portfolio />
+        <Portfolio onClick={closeMenu} />
       </div>
     </div>
   );

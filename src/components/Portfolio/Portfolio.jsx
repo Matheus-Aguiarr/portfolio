@@ -1,9 +1,23 @@
 import "./Portfolio.css";
 import ShinyText from "../../Animations/ShinyText.jsx";
+import siteVint from "../../assets/sitevint.png";
+import PortfolioBox from "../PortfolioBox/PortfolioBox.jsx";
 
-const Portfolio = () => {
+const Portfolio = ({ onClick }) => {
+  const projects = [
+    {
+      img: siteVint,
+      name: "Landing Page",
+      technologies: "HTML, CSS, JS",
+      description:
+        "I made this website for a energy company owner who were needing more qualified leads",
+      urlGit: "",
+      urlWeb: "",
+    },
+  ];
+
   return (
-    <div id="portfolio" className="mb-[50px] mt-[300px]">
+    <div id="portfolio" className="mb-[50px] mt-[300px]" onClick={onClick}>
       <h1 className="text-white text-[32px] text-center">
         My <span className="text-[var(--main-color)]">Portfolio</span>
       </h1>
@@ -23,17 +37,18 @@ const Portfolio = () => {
           className="custom-class"
         />
       </p>
-      <div className="portfolio-container">
-        <div className="portfolioBox bg-[var(--bg-color03)] w-[250px] flex flex-col">
-          <img src="" alt="" />
-          <h2>
-            Landing Page - <span>HTML, CSS, JS</span>
-          </h2>
-          <div>
-            <a href="">View on Github</a>
-            <a href="">View on Web</a>
-          </div>
-        </div>
+      <div className="portfolio-container flex flex-row justify-center mt-4 gap-[25px]">
+        {projects.map((project) => {
+          return (
+            <PortfolioBox
+              key={project.name}
+              name={project.name}
+              technologies={project.technologies}
+              description={project.description}
+              img={project.img}
+            />
+          );
+        })}
       </div>
     </div>
   );

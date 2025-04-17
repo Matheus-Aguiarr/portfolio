@@ -20,12 +20,14 @@ const PortfolioBox = ({
         <a
           href={urlGit}
           className="bg-[var(--main-color)] p-2 text-[12px]  rounded-md text-white hover:bg-transparent border-[var(--main-color)] border-1 duration-[.5s] hover:text-[var(--main-color)] shadow-lg shadow-[#ff1e1e6c]"
+          target="_blank"
         >
           View on Github
         </a>
         <a
           href={urlWeb}
           className="bg-[var(--main-color)] p-2 text-[12px] rounded-md text-white hover:bg-transparent border-[var(--main-color)] border-1 duration-[.5s] text-bold hover:text-[var(--main-color)] shadow-lg shadow-[#ff1e1e6c]"
+          target="_blank"
         >
           View on Web
         </a>

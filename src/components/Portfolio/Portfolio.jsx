@@ -11,8 +11,8 @@ const Portfolio = ({ onClick }) => {
       technologies: "HTML, CSS, JS",
       description:
         "I made this website for a energy company owner who were needing more qualified leads",
-      urlGit: "",
-      urlWeb: "",
+      urlGit: "https://github.com/Matheus-Aguiarr/vinteficienciaenergetica",
+      urlWeb: "https://vinteficienciaenergetica.com.br",
     },
   ];
 
@@ -46,6 +46,8 @@ const Portfolio = ({ onClick }) => {
               technologies={project.technologies}
               description={project.description}
               img={project.img}
+              urlGit={project.urlGit}
+              urlWeb={project.urlWeb}
             />
           );
         })}

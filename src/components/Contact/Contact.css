@@ -1,0 +1,20 @@
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.363);
+  transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .contact-form div {
+    flex-direction: column;
+  }
+
+  .contact-form div input {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}

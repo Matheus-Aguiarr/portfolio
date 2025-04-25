@@ -5,6 +5,7 @@ import Skills from "./components/Skills/Skills.jsx";
 import { useState } from "react";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Particles from "./Animations/Particles.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,6 +40,7 @@ function App() {
         <Home onClick={closeMenu} />
         <Skills onClick={closeMenu} />
         <Portfolio onClick={closeMenu} />
+        <Contact onClick={closeMenu} />
       </div>
     </div>
   );

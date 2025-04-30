@@ -21,7 +21,7 @@ const Contact = ({ onClick }) => {
               placeholder="Name"
               name="name"
               required
-              className="bg-[var(--bg-color03)] p-2 text-white rounded-md w-[50%] border-none"
+              className="bg-[var(--bg-color03)] p-2 text-white rounded-md w-[50%] border-none "
             />
             <input
               type="email"

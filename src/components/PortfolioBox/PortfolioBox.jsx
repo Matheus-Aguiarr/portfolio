@@ -7,9 +7,15 @@ const PortfolioBox = ({
   urlWeb,
 }) => {
   return (
-    <div className="portfolioBox bg-[var(--bg-color03)] w-[300px] flex flex-col p-4 rounded-[10px] gap-[10px] hover:scale-[1.05] duration-[.5s] cursor-pointer border-[var(--main-color)] border-1 hover:inset-shadow-sm inset-shadow-black">
+    <div className="portfolioBox bg-[var(--bg-color03)] max-w-[300px] min-w-[300px] flex flex-col p-4 rounded-[10px] gap-[10px] hover:scale-[1.05] duration-[.5s] cursor-pointer border-[var(--main-color)] border-1 hover:inset-shadow-sm inset-shadow-black ">
       <div className="w-[90%] m-auto">
-        <img src={img} alt="" className="rounded-md" />
+        <a href={urlWeb} target="_blank">
+          <img
+            src={img}
+            alt=""
+            className="rounded-md hover:scale-[1.05] duration-[0.5s] shadow-3xl shadow-[var(--bg-color03)]"
+          />
+        </a>
       </div>
       <h2 className="text-white text-[16px] text-center font-semibold">
         {name} -{" "}

@@ -1,6 +1,7 @@
 import "./Portfolio.css";
 import ShinyText from "../../Animations/ShinyText.jsx";
 import siteVint from "../../assets/sitevint.png";
+import sitePadaria from "../../assets/sitepadaria.png";
 import PortfolioBox from "../PortfolioBox/PortfolioBox.jsx";
 
 const Portfolio = ({ onClick }) => {
@@ -13,6 +14,15 @@ const Portfolio = ({ onClick }) => {
         "I made this website for a energy company owner who were needing more qualified leads",
       urlGit: "https://github.com/Matheus-Aguiarr/vinteficienciaenergetica",
       urlWeb: "https://vinteficienciaenergetica.com.br",
+    },
+    {
+      img: sitePadaria,
+      name: "Landing Page",
+      technologies: "React, Tailwind",
+      description:
+        "I made this website for a bakery owner who were needing more qualified leads",
+      urlGit: "https://github.com/Matheus-Aguiarr/padaria-cecap",
+      urlWeb: "https://padaria-cecap.vercel.app",
     },
   ];
 

@@ -12,10 +12,16 @@ const Contact = ({ onClick }) => {
       </h1>
       <div className="contact-container ">
         <form
-          action=""
+          method="POST"
+          action="https://formsubmit.co/matheusaguiardealmeida@gmail.com"
           className="contact-form flex flex-col gap-[10px] w-[500px] m-auto"
         >
           <div className="flex flex-row gap-[10px]">
+            <input
+              type="hidden"
+              name="_next"
+              value="https://matheusaguiar.vercel.app"
+            ></input>
             <input
               type="text"
               placeholder="Name"
@@ -34,16 +40,14 @@ const Contact = ({ onClick }) => {
           <div className="flex flex-row gap-[10px]">
             <input
               type="tel"
-              placeholder="Phone Number"
+              placeholder="Phone Number (optional)"
               name="phone"
-              required
               className="bg-[var(--bg-color03)] p-2 text-white rounded-md w-[50%] border-none"
             />
             <input
               type="text"
-              placeholder="Subject"
+              placeholder="Subject (optional)"
               name="subject"
-              required
               className="bg-[var(--bg-color03)] p-2 text-white rounded-md w-[50%] border-none"
             />
           </div>

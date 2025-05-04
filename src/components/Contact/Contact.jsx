@@ -18,11 +18,6 @@ const Contact = ({ onClick }) => {
         >
           <div className="flex flex-row gap-[10px]">
             <input
-              type="hidden"
-              name="_next"
-              value="https://matheusaguiar.vercel.app"
-            ></input>
-            <input
               type="text"
               placeholder="Name"
               name="name"

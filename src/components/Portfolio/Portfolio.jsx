@@ -2,6 +2,7 @@ import "./Portfolio.css";
 import ShinyText from "../../Animations/ShinyText.jsx";
 import siteVint from "../../assets/sitevint.png";
 import sitePadaria from "../../assets/sitepadaria.png";
+import apiStudents from "../../assets/alunoAPIImage.png";
 import PortfolioBox from "../PortfolioBox/PortfolioBox.jsx";
 
 const Portfolio = ({ onClick }) => {
@@ -24,6 +25,15 @@ const Portfolio = ({ onClick }) => {
       urlGit: "https://github.com/Matheus-Aguiarr/padaria-cecap",
       urlWeb: "https://padaria-cecap.vercel.app",
     },
+    {
+      img: apiStudents,
+      name: "API Management Students",
+      technologies: "Java, SpringBoot, PostgreSQL",
+      description:
+        "That's my first API, I made it to manage students and their grades",
+      urlGit: "https://github.com/Matheus-Aguiarr/cadastro-alunos-api",
+      urlWeb: "https://github.com/Matheus-Aguiarr/cadastro-alunos-api",
+    },
   ];
 
   return (
@@ -41,7 +51,7 @@ const Portfolio = ({ onClick }) => {
       </p>
       <p className="text-center ">
         <ShinyText
-          text="In 2024 I started doing freelances as a web developer. These are my already done projects:"
+          text="In 2024 I started doing freelances as a web developer. These are my already done freelances and personal projects:"
           disabled={false}
           speed={3}
           className="custom-class"

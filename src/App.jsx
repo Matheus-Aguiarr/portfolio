@@ -44,7 +44,7 @@ function App() {
         <Skills onClick={closeMenu} />
         <Portfolio onClick={closeMenu} />
         <Contact onClick={closeMenu} />
-        <About onClick={closeMenu} />
+        {/* <About onClick={closeMenu} /> */}
       </div>
     </div>
   );

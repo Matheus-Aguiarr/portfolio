@@ -6,6 +6,7 @@ import { useState } from "react";
 import Portfolio from "./components/Portfolio/Portfolio.jsx";
 import Particles from "./Animations/Particles.jsx";
 import Contact from "./components/Contact/Contact.jsx";
+import About from "./components/About/About.jsx";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,13 +35,16 @@ function App() {
       />
       <div className="app-content">
         <Header
-          navMenu={`nav ${isMenuOpen ? "open" : ""}`}
+          navMenu={`nav ${
+            isMenuOpen ? "open bg-[var(--bg-color02)]/30 backdrop-blur-lg" : ""
+          }`}
           burgerMenu={toggleMenu}
         />
         <Home onClick={closeMenu} />
         <Skills onClick={closeMenu} />
         <Portfolio onClick={closeMenu} />
         <Contact onClick={closeMenu} />
+        <About onClick={closeMenu} />
       </div>
     </div>
   );

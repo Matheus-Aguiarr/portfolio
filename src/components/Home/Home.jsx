@@ -5,6 +5,7 @@ import { FiGithub } from "react-icons/fi";
 import { GiSpiderMask } from "react-icons/gi";
 import { GiLongLeggedSpider } from "react-icons/gi";
 import { GiHangingSpider } from "react-icons/gi";
+import cv from "../../assets/curriculoMatheusDev.pdf";
 
 // Proxima coisa a fazer: addDownloadCV;
 
@@ -58,6 +59,7 @@ const Home = ({ onClick }) => {
         <a
           href=""
           className="shadow-lg shadow-[#ff1e1e6c] bg-[var(--main-color)] w-[fit-content] m-auto text-[#fff] mt-4 p-2 rounded-xl px-8 hover:bg-[var(--bg-color)] duration-[.5s] hover:text-[var(--main-color)] border-1 border-[var(--main-color)] font-bold"
+          download={cv}
         >
           Download CV
         </a>

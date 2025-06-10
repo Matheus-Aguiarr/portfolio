@@ -7,7 +7,7 @@ const Header = ({ navMenu, burgerMenu }) => {
 
   return (
     <header className="header">
-      <div className="header-container">
+      <div className="header-container bg-[(--bg-color02)]/30 backdrop-blur-lg ">
         <a href="" className="burger-menu" onClick={burgerMenu}>
           <IoMenu size={40} />
         </a>

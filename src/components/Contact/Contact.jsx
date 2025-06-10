@@ -22,14 +22,14 @@ const Contact = ({ onClick }) => {
               placeholder="Name"
               name="name"
               required
-              className="bg-[var(--bg-color03)] p-2 text-white rounded-md w-[50%] border-none "
+              className="bg-[var(--bg-color03)]/30 backdrop-blur-lg p-2 text-white rounded-md w-[50%] border-none "
             />
             <input
               type="email"
               placeholder="Email"
               name="email"
               required
-              className="bg-[var(--bg-color03)] p-2 text-white rounded-md w-[50%] border-none"
+              className="bg-[var(--bg-color03)]/30 backdrop-blur-lg p-2 text-white rounded-md w-[50%] border-none"
             />
           </div>
           <div className="flex flex-row gap-[10px]">
@@ -37,13 +37,13 @@ const Contact = ({ onClick }) => {
               type="tel"
               placeholder="Phone Number (optional)"
               name="phone"
-              className="bg-[var(--bg-color03)] p-2 text-white rounded-md w-[50%] border-none"
+              className="bg-[var(--bg-color03)]/30 backdrop-blur-lg p-2 text-white rounded-md w-[50%] border-none"
             />
             <input
               type="text"
               placeholder="Subject (optional)"
               name="subject"
-              className="bg-[var(--bg-color03)] p-2 text-white rounded-md w-[50%] border-none"
+              className="bg-[var(--bg-color03)]/30 backdrop-blur-lg p-2 text-white rounded-md w-[50%] border-none"
             />
           </div>
           <div className="flex flex-col gap-[10px]">
@@ -52,7 +52,7 @@ const Contact = ({ onClick }) => {
               name="message"
               rows="5"
               required
-              className="bg-[var(--bg-color03)] p-2 text-white rounded-md resize-none"
+              className="bg-[var(--bg-color03)]/30 backdrop-blur-lg p-2 text-white rounded-md resize-none"
             ></textarea>
             <button
               type="submit"

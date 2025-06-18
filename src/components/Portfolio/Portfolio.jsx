@@ -2,8 +2,9 @@ import "./Portfolio.css";
 import ShinyText from "../../Animations/ShinyText.jsx";
 import siteVint from "../../assets/sitevint.png";
 import sitePadaria from "../../assets/sitepadaria.png";
-import apiStudents from "../../assets/alunoAPIImage.png";
+import apiStudents from "../../assets/cadastroaluospreview.png";
 import PortfolioBox from "../PortfolioBox/PortfolioBox.jsx";
+import apiBarberHub from "../../assets/barberhubpreview.png";
 
 const Portfolio = ({ onClick }) => {
   const projects = [
@@ -34,6 +35,15 @@ const Portfolio = ({ onClick }) => {
       urlGit: "https://github.com/Matheus-Aguiarr/cadastro-alunos-api",
       urlWeb: "https://github.com/Matheus-Aguiarr/cadastro-alunos-api",
     },
+    {
+      img: apiBarberHub,
+      name: "API Scheduling BarberHub",
+      technologies: "Java, SpringBoot, PostgreSQL",
+      description:
+        "That's an Scheduling tool for barbers, made for manage their users, appointments and services.",
+      urlGit: "https://github.com/Matheus-Aguiarr/barberhub.git",
+      urlWeb: "https://github.com/Matheus-Aguiarr/barberhub.git",
+    },
   ];
 
   return (
@@ -45,7 +55,7 @@ const Portfolio = ({ onClick }) => {
         <ShinyText
           text="Experience: "
           disabled={false}
-          speed={3}
+          speed={1.5}
           className="custom-class"
         />
       </p>
@@ -53,7 +63,7 @@ const Portfolio = ({ onClick }) => {
         <ShinyText
           text="In 2024 I started doing freelances as a web developer. These are my already done freelances and personal projects:"
           disabled={false}
-          speed={3}
+          speed={1.5}
           className="custom-class"
         />
       </p>

@@ -57,9 +57,9 @@ const Home = ({ onClick }) => {
 
       <div className="m-auto mt-4 ">
         <a
-          href=""
+          href={cv}
           className="shadow-lg shadow-[#ff1e1e6c] bg-[var(--main-color)] w-[fit-content] m-auto text-[#fff] mt-4 p-2 rounded-xl px-8 hover:bg-[var(--bg-color)] duration-[.5s] hover:text-[var(--main-color)] border-1 border-[var(--main-color)] font-bold"
-          download={cv}
+          download
         >
           Download CV
         </a>

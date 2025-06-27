@@ -6,12 +6,16 @@ import { GiSpiderMask } from "react-icons/gi";
 import { GiLongLeggedSpider } from "react-icons/gi";
 import { GiHangingSpider } from "react-icons/gi";
 import cv from "../../assets/curriculoMatheusDev.pdf";
+import { motion } from "motion/react";
 
 // Proxima coisa a fazer: addDownloadCV;
 
 const Home = ({ onClick }) => {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, x: -120 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
       className="home mt-[250px] flex flex-col justify-center gap-[5px] mb-[500px]"
       onClick={onClick}
       id="home"
@@ -69,7 +73,7 @@ const Home = ({ onClick }) => {
           className="mt-1 m-auto"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

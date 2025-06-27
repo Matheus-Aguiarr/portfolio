@@ -5,6 +5,7 @@ import sitePadaria from "../../assets/sitepadaria.png";
 import apiStudents from "../../assets/cadastroaluospreview.png";
 import PortfolioBox from "../PortfolioBox/PortfolioBox.jsx";
 import apiBarberHub from "../../assets/barberhubpreview.png";
+import { motion } from "framer-motion";
 
 const Portfolio = ({ onClick }) => {
   const projects = [
@@ -70,15 +71,24 @@ const Portfolio = ({ onClick }) => {
       <div className="portfolio-container flex flex-row justify-center mt-4 gap-[25px]">
         {projects.map((project) => {
           return (
-            <PortfolioBox
-              key={project.name}
-              name={project.name}
-              technologies={project.technologies}
-              description={project.description}
-              img={project.img}
-              urlGit={project.urlGit}
-              urlWeb={project.urlWeb}
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -120 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              <PortfolioBox
+                initial={{ opacity: 0, x: -120 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                key={project.name}
+                name={project.name}
+                technologies={project.technologies}
+                description={project.description}
+                img={project.img}
+                urlGit={project.urlGit}
+                urlWeb={project.urlWeb}
+              />
+            </motion.div>
           );
         })}
       </div>

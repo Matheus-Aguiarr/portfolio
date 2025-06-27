@@ -2,6 +2,7 @@ import "./Skills.css";
 import SkillsBox from "../SkillsBox/SkillsBox.jsx";
 import { FaNodeJs, FaCss3, FaReact, FaJava } from "react-icons/fa";
 import { BiLogoSpringBoot } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 const Skills = ({ onClick }) => {
   const skills = [
@@ -41,12 +42,18 @@ const Skills = ({ onClick }) => {
       <section className="skills-container flex flex-row justify-center gap-[27px] mt-[50px] mb-[50px]">
         {skills.map((skill) => {
           return (
-            <SkillsBox
-              key={skill.name}
-              name={skill.name}
-              description={skill.description}
-              icon={skill.icon}
-            />
+            <motion.div
+              initial={{ opacity: 0, x: -120 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+            >
+              <SkillsBox
+                key={skill.name}
+                name={skill.name}
+                description={skill.description}
+                icon={skill.icon}
+              />
+            </motion.div>
           );
         })}
       </section>

@@ -7,7 +7,7 @@ const PortfolioBox = ({
   urlWeb,
 }) => {
   return (
-    <div className="portfolioBox bg-[var(--bg-color02)]/30 backdrop-blur-lg max-w-[300px] min-w-[300px] flex flex-col p-4 rounded-[10px] gap-[10px] hover:scale-[1.05] duration-[.5s] cursor-pointer border-[var(--main-color)] border-1 hover:inset-shadow-sm inset-shadow-black ">
+    <div className="portfolioBox bg-[var(--bg-color02)]/30 backdrop-blur-lg max-w-[300px] min-w-[300px] flex flex-col p-4 rounded-[10px] gap-[10px] hover:scale-[1.05] duration-[.5s] cursor-pointer border-[var(--main-color)] border-1 hover:inset-shadow-sm inset-shadow-black min-h-[400px]">
       <div className="w-[90%] m-auto relative group overflow-hidden rounded-lg">
         <a href={urlWeb} target="_blank">
           <img

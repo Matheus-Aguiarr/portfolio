@@ -1,15 +1,21 @@
 import "./Skills.css";
 import SkillsBox from "../SkillsBox/SkillsBox.jsx";
-import { FaNodeJs, FaCss3, FaReact, FaJava } from "react-icons/fa";
-import { BiLogoSpringBoot } from "react-icons/bi";
+import { FaCss3, FaReact, FaJava } from "react-icons/fa";
+import { BiLogoSpringBoot, BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
 import { motion } from "framer-motion";
 
 const Skills = ({ onClick }) => {
   const skills = [
     {
-      name: "ReactJS",
+      name: "React",
       icon: <FaReact size={30} color="var(--main-color)" />,
-      description: "I do front-end development using ReactJS.",
+      description: "I do front-end development using React.",
+    },
+    {
+      name: "Typescript", 
+      icon: <BiLogoTypescript size={30} color="var(--main-color)"/>,
+      description: "I use typescript in React for frontend development."
     },
     {
       name: "Java",
@@ -17,19 +23,19 @@ const Skills = ({ onClick }) => {
       description: "I do back-end development using Java",
     },
     {
-      name: "NodeJS",
-      icon: <FaNodeJs size={30} color="var(--main-color)" />,
-      description: "I do back-end development using NodeJS",
-    },
-    {
-      name: "CSS3",
-      icon: <FaCss3 size={30} color="var(--main-color)" />,
-      description: "I stylize my web pages using CSS3.",
-    },
-    {
       name: "Spring Boot",
       icon: <BiLogoSpringBoot size={30} color="var(--main-color)" />,
-      description: "I study one of the most popular Java frameworks.",
+      description: "I do Rest APIs using springboot.",
+    },
+    {
+      name: "PostgreSQL",
+      icon: <BiLogoPostgresql size={30} color="var(--main-color)"/>,
+      description: "I use postgres as my main database for backend applications",
+    },
+    {
+      name: "Tailwindcss",
+      icon: <RiTailwindCssFill size={30} color="var(--main-color)" />,
+      description: "I stylize my web pages using TailwindCSS.",
     },
     // Add more skills as needed
   ];

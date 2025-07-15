@@ -1,11 +1,15 @@
 import "./Contact.css";
+import { motion } from "framer-motion";
 
 const Contact = ({ onClick }) => {
   return (
-    <div
+    <motion.div
       onClick={onClick}
       className="contact mt-[300px] mb-[200px] max-w-[100vw]"
       id="contact"
+      initial={{ opacity: 0, x: -120 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
     >
       <h1 className="text-white text-2xl text-center mb-[50px]">
         Get in <span className="text-[var(--main-color)]">Touch</span>
@@ -63,7 +67,7 @@ const Contact = ({ onClick }) => {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,10 +5,17 @@ import sitePadaria from "../../assets/sitepadaria.png";
 import apiStudents from "../../assets/cadastroaluospreview.png";
 import PortfolioBox from "../PortfolioBox/PortfolioBox.jsx";
 import apiBarberHub from "../../assets/barberhubpreview.png";
+import mindTrack from "../../assets/mindtrack.png"
 import { motion } from "framer-motion";
 
 const Portfolio = ({ onClick }) => {
   const projects = [
+    {
+      img: mindTrack, 
+      name: "MindTrack", 
+      technologies: "Backend: Java, Springboot | Frontend: React Typescript", 
+      description: "This is my best project ever. I made an entire system for students who want to manage their studies, creating subjects, goals and notes."
+    },
     {
       img: siteVint,
       name: "Landing Page",

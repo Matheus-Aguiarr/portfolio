@@ -37,7 +37,7 @@ const Home = ({ onClick }) => {
       </h2>
       <div className="links flex flex-row justify-center gap-[50px]">
         <a
-          href="https://www.linkedin.com/in/matheus-aguiar-aguiar-de-almeida-695a17352/"
+          href="https://www.linkedin.com/posts/matheus-aguiar-de-almeida-695a17352_front-end-do-projeto-finalizado-com-sucesso-activity-7350715095208853506-s7kD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFgSXBEBEb0-uibqSvJ7x6v6EARQ5_Fo29o"
           className="hover:scale-[1.05] duration-[.5s] "
           target="_blank"
         >

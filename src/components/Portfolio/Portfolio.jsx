@@ -14,7 +14,9 @@ const Portfolio = ({ onClick }) => {
       img: mindTrack, 
       name: "MindTrack", 
       technologies: "Backend: Java, Springboot | Frontend: React Typescript", 
-      description: "This is my best project ever. I made an entire system for students who want to manage their studies, creating subjects, goals and notes."
+      description: "This is my best project ever. I made an entire system for students who want to manage their studies, creating subjects, goals and notes.", 
+      urlGit: "https://github.com/Matheus-Aguiarr/MindTrack", 
+      urlWeb: "https://mindtrack-study.vercel.app/",
     },
     {
       img: siteVint,
